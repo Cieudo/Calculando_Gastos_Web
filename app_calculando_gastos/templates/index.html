@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+    <title>Calculadora de Gastos</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/index">Home</a></li>
+                <li><a href="/registro">Cadastre-se</a></li>
+                <li><a href="/login">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="main-content">
+        <h1>Calculadora de Gastos</h1>
+        <img src="{% static 'images/index.png' %}" alt="Calculadora de Gastos">
+
+        <div class="cta-buttons">
+            <a href="{% url 'registrar' %}">Cadastre-se</a>
+            <a href="{% url 'login' %}">Login</a>
+        </div>
+    </div>
+
+    <footer>
+        <!-- Seu rodapé aqui -->
+    </footer>
+</body>
+</html>
